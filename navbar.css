@@ -1,0 +1,50 @@
+body{
+    background-color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li{
+    float: left;
+}
+
+ul.topnav li a{
+    color: orange;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    text-align: center;
+}
+
+ul.topnav li a:hover:not(.active){
+    background-color: black;
+}
+
+ul.topnav li a.active{
+    background-color: orange;
+    color: black;
+}
+
+ul.topnav li a.active:hover{
+    background-color: rgb(247, 192, 92);
+    color: black;
+}
+
+ul.topnav li.right{
+    float:right;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li{
+        float: none;
+    }
+}
